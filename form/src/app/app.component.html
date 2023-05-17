@@ -1,10 +1,13 @@
 <form [formGroup]="loginForm"  (ngSubmit)="loginUser()">
-  Name:<input type="text" name="user" placeholder="Enter name..." formControlName="user" /><br /><br />
+  Email:<input type="text" name="user" placeholder="Enter Email.." formControlName="user" /><br />
+  <span *ngIf="user1 && user1.invalid && user1.touched">Please enter email!!!</span><br/><br/>
   Password:<input
     type="password"
     name="password"
     placeholder="enter the password" 
     formControlName="password"
-  /><br /><br />
-  <button>Login</button>
+  /><br />
+  <span *ngIf="password1 && password1.invalid && password1.touched">Please enter password!!!</span> 
+  <br /><br/>
+  <button [disabled]="loginForm.invalid">Login</button>
 </form>
