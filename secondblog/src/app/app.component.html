@@ -1,0 +1,53 @@
+<h1>Hello from  {{title}}</h1>
+
+<!--Style Binding-->
+<h1 [style.color]="color">Style Binding Example</h1>
+<button (click)="changecolor()">Change Color</button>
+
+
+
+<!-- <h3 *ngFor="let items of arrayExample2">{{items}}</h3>
+<div [ngSwitch]="color">
+  <h1 *ngSwitchCase="'red'" style="color:red">Red</h1>
+  <h1 *ngSwitchCase="'green'" style="color:green">Green</h1>
+  <h1 *ngSwitchCase="'blue'" style="color:blue">Blue</h1>
+  <h1 *ngSwitchDefault>Default</h1>
+</div>
+
+<ul *ngFor="let item of arrayExample4">
+    <li>Name:{{item.name}}</li>
+    <li>Phone Numbers:</li> 
+    <ul>
+    <li *ngFor="let number of item.phonenumber">{{number}}</li>
+    </ul>
+    
+  </ul> -->
+
+
+<!-- 
+<h3 *ngFor="let item of arrayExample">{{item}}</h3>
+
+<h3 *ngFor="let item1 of arrayExample3">{{item1.name}}  {{item1.address}}  {{item1.phone}}</h3> -->
+
+<!-- <ng-template [ngIf]="color==='red'">
+  <h1>red</h1>
+</ng-template>
+
+<ng-template [ngIf]="color==='green'">
+  <h1>Green</h1>
+</ng-template> -->
+
+<!-- <h1 *ngIf="data1=='yes';then ifBlock else elseBlock">
+  IF condition
+
+</h1>
+
+<ng-template #ifBlock>
+  <h1>If condition true</h1>
+</ng-template>
+
+<ng-template #elseBlock>
+
+  <h1>Else case</h1>
+
+</ng-template> -->
